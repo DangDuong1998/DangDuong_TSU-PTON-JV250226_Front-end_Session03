@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Bài tập] Tạo form tìm kiếm và lọc sản phẩm</title>
+    <style> 
+        input, select {
+            display: block;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tìm Kiếm Sản Phẩm</h1>
+    <search>
+        <form action="http://isearchserver.com" method="get">
+            <label for="searchbar_id">Từ khóa tìm kiếm:</label>
+            <input type="text" name="searchbar_n" id="searchbar_id">
+            
+            <label for="filter_id">Loại sản phẩm:</label>
+            <select name="filter_n" id="filter_id">
+                <option value="Điện tử">Điện tử</option>
+                <option value="Thực phẩm">Thực phẩm</option>
+                <option value="Quần áo">Quần áo</option>
+            </select>
+            <input type="submit" value="Tìm kiếm">
+        </form>
+        
+    
+    </search>
+</body>
+</html>
